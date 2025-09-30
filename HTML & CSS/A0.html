@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navgiation Bar</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 300px;
+            border: 2px solid;
+            position: relative;
+        }
+        #circle{
+            width: 70px;
+            height: 70px;
+            left: 4px;
+            top: 4px;
+            position: absolute;
+            background-color: chartreuse;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="ani()">click</button>
+    <div id="box">
+        <div id="circle">
+
+        </div>
+    </div>
+    <div id="width">
+    
+    </div>
+    <div id="height">
+    </div>
+    <h4>Exception Handling</h4>
+    <input type="button" value="click" onclick="fun()">
+   <script>
+    var wid = document.getElementById("width").innerHTML=screen.width
+    var hei = document.getElementById("height").innerHTML=screen.height
+    function ani() {
+        var c = document.getElementById("circle")
+        var c1 = 0
+        var id = setInterval(Animate,5)
+        function Animate() {
+            if(c1 == 300) {
+                clearInterval(id)
+            } else {
+                c1++
+                c.style.top = c1+"px"
+                c.style.left = c1+"px"
+            }
+        }
+    }
+
+    var fun = () => {
+        var str = "Virat"
+        try {
+            var lower = str.toLowerCase()
+            alert(lower)
+        }
+        catch(e) {
+            alert("error")
+        }
+        finally {
+            alert("Hello, I will always exceute atleast once")
+        }
+    }
+
+
+   </script>
+</body>
+</html>

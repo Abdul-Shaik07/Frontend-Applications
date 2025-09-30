@@ -1,0 +1,13 @@
+
+.nav-bar-items .list-items ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar-items .list-items ul li:hover {
+    border: 2px solid none;
+    background-color: cornsilk;
+    
+}
+
+/* d-flex justify-content-between list-unstyled m-2 bg */

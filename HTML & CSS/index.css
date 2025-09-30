@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.heading {
+    float: left;
+}
+
+
+/*body{
+    background-color: black;
+}
+#laptop{
+    border: 2px solid none;
+    height:200px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+h1{
+    color: blue;
+    padding-left: 10px;
+}
+p{
+    color: white;
+    padding-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+}
+#heading{
+    border-left: 3px solid blue;
+}
+
+#st,#nd,#rd,#th,#six{
+    color: black;
+    font-family:'Arial';
+    list-style-type: none;
+    margin: 10px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    
+    
+
+}
+#st:hover,#nd:hover,#rd:hover,#th:hover,#six:hover{
+    
+    background: orange;
+}
+
+#outer_box{
+    border: 2px solid ;
+    width: 300px;
+    height: 300px;  
+    background-color: pink; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-left: 500px;*/
+    flex-wrap: wrap;
+
+}
+#inner_box{
+    border: 2px solid red;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+ 
+}
+
+@media (min-width : 600px) and (max-width : 700px){
+    #inner_box{
+        background-color: cadetblue;
+    }
+}
+
+.a{
+    display: flex;
+    justify-content: center;
+
+}
+
+.b{
+    margin: 20px;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    transition: all 1s ease 3s;
+    animation: animate 5s ease 1s infinite alternate;
+}
+
+#c{
+    position: absolute;
+    
+    /*left: 100px;*/
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-top: 5px solid #E9EB87;
+    animation: spinAnimate 2s steps(5) 0s infinite normal;
+    
+    
+}
+
+/*
+div.b:hover{
+    background-color: red;
+    border: none;
+    border-bottom:2px solid white;
+    /*border-width: 50px;
+    font-size: x-small;
+    line-height: 50px;
+    color: black;  
+}*/
+
+/*@keyframes animate {
+    from {background-color: black;}
+    to{background-color: red;  
+}*/
+
+@keyframes spinAnimate {
+    from {transform: rotate(0deg);
+        
+    }
+    to{transform: rotate(360deg);
+
+    }    
+} */
+
+table, tr, th{border: 2px solid burlywood;}
+
+
+

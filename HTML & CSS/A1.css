@@ -1,0 +1,119 @@
+
+body{
+    background-image: url(unnamed.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+.navbar .heading h1{
+    float: left;
+    color: white;
+    position: relative;
+    font-family: Verdana;
+    font-size: x-large;
+    margin-left: 10px;
+    
+}
+
+.heading h1:hover{
+    color: darkkhaki;
+    transition: 0.6s ease-in-out;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    width: 50px;
+    height: 30px;
+    display: inline;
+    margin: 20px;
+    top: 5px;
+    position: relative;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Arial;
+    color: white;
+}
+
+ul li:hover {
+    color: cyan;
+    transition: 0.5s ease-in;
+}
+
+.search {
+    float: right;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+input {
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    background: none;
+}
+
+::placeholder {
+    color: white;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: cyan;
+    margin: 10px;
+    border: none;
+    color: black;
+   transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+}
+
+/*div input{
+    background-color: ;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    margin-left: 20px;
+    
+    
+    
+}*/
+
+button:hover{
+    color: white;
+    border-radius: 10px;
+    background-color: chartreuse;
+    font-size: large;
+    /*transform:scale(0.5,0.5);*/
+    transform: translateX(100px);
+    transform: translateX(-100px);
+    transform: translateY(-100px);
+    transform: translateY(100px);
+    transform: translate(200px,200px);
+    transform: skewX(30deg,30deg);
+
+    
+    
+    
+}
+
+button:active{
+    background-color: black;
+    transition-duration: 2s;
+  
+}

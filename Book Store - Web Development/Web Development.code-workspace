@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../Documents/Web Development"
+		},
+		{
+			"name": "demo",
+			"path": "../../Documents/SpringBoot Application/demo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Web Development"
+	}
+}

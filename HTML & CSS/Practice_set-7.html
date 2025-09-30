@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries</title>
+    <link rel="stylesheet" href="Practice_set-7.css">
+    <style>
+        #box{
+            width: 300px;
+            height: 300px;
+            background-color: bisque;
+            position: relative;
+        }
+        #circle{
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            background-color: chartreuse;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <button onclick="fun1()">Fun-1</button>
+        <button onmouseover="fun1()">Fun-2</button>
+        <button ondblclick="fun1()">Fun-3</button>
+        <button id = "hello" onclick="hello()">hello</button> -->
+        <h1>Form-Validation</h1>
+        <div style="text-align: center;">
+            <form onsubmit="return formValidation()">
+                <label for="">First Name:</label>
+                <input type="text" name="" id="fname">
+                <span style="color: red; font-size: large;" id="msg" >*</span> <br><br>
+                <label for="">Phone Number:</label>
+                <input type="text" name="" id="phoneNumber">
+                <span style="color: red; font-size: large;" id="msg1" >*</span> <br><br>
+                <input type="submit" value="submit">
+            </form>
+        </div>  <br><br>
+
+    </div>
+    
+</body>
+</html>

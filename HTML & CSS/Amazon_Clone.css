@@ -1,0 +1,40 @@
+.nav-bar {
+    background-color: #0F1111;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 4px;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+}
+
+.nav-loc {
+    height: 50px;
+    width: 161px;
+    display: flexd;
+
+}
+
+.
+
+
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+

@@ -1,0 +1,71 @@
+
+div ul li {
+    border: 2px solid;
+    background-color: aqua;
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+    text-align: center;
+    list-style-type: none;
+    float: left;
+    border-radius: 2px;
+}
+
+div ul li:hover{
+    background-color: red;
+}
+
+div ul li ul li{
+   display: none;
+}
+
+
+div ul li:hover ul li{
+    display: block;
+
+}
+
+body{
+    background-color:black;
+}
+
+h1{
+    color: blanchedalmond;
+    text-align: center;
+    font-style: italic;
+    font: bold;
+}
+
+#mobile{
+    color: white;
+}
+
+#hello{
+    background-color: orange;
+    width: 500px;
+    height: 500px;
+    
+    
+}
+#hi{
+    color: black;
+    font-style: italic;
+    float: right;
+    font-size: xx-large;
+
+}
+#bye{
+    color: white;
+    float: right;
+    font-size:xx-large ;
+}
+
+div {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 100px;
+}
+

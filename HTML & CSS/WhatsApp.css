@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar .heading {
+    background-color: lightgreen;
+    height: 40px;
+}
+.heading h1{
+    position: fixed;
+    margin-left: 20px;
+    font-size: x-large;
+    font-family: Arial;
+    text-align: center;
+
+}

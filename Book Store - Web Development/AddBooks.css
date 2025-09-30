@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./html-color-codes-color-tutorials-hero.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;}
+
+.heading{text-align: center; margin-top: 150px; font-size: large; font-family: Arial, Helvetica, sans-serif; color: white;}
+.books{display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.books div{padding: 30px; border: 2px solid white; border-radius: 10px;}
+.books div label{font-size: large; font-family: Arial, Helvetica, sans-serif; color: white;}
+.books div input{font-family: Arial, Helvetica, sans-serif; font-size: large; width: 300px; height: 40px; border-radius: 10px; border: none; background: none;} 
+.books div input::placeholder{color: white;}
+.books div .bookDate{color: white;}
+.submit {width: 250px; height: 30px; border-radius: 5px; border: none; font-size:large; font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-left: 20px;}
+.submit a{text-decoration: none; color: black;}

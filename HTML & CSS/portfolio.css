@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+p{
+    color: white;
+}
+.mainContainer {
+    color: white;
+    font-size: x-large;
+    font-style: normal;
+    display: flex;
+    margin: 5px;
+
+}
+.home,.aboutMe,.contact {
+    margin: 5px;
+    border: 2px solid red;
+    padding: 7px;
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+.home:hover,.aboutMe:hover,.contact:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}

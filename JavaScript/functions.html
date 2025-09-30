@@ -1,0 +1,75 @@
+<script>
+    
+     function a1(a,b) {
+        console.log(a + b)          //parameterized funtion  
+    }
+    a1(10,20)
+    a1(10,2)
+    a1(2,3)
+    a1(3,2)
+
+    function b1() {                 //Non - parameterized funtion
+        ab = 10
+        ba = 20
+        console.log(ab+ba)
+    }
+    b1()
+
+    function c1(p = 10, q = 20) {   //parameterized funtion
+        return p * q                
+    }
+    console.log(c1())
+
+
+//prompt is used to take input from the user.
+function userinput() {
+    var x = prompt("enter the number : ")
+    var y = prompt("Enter the second number : ")
+    console.log(parseInt(x) + parseInt(y))
+}
+userinput()
+
+
+//alert is used to display the warning message.
+function Hello() {
+    var x = alert("This page is for 18+ guys")
+
+    console.log(x)
+} 
+Hello()
+
+
+//confirm is used to confirmation from the user.
+function hi() {
+    confirm("If you are 18+ then enter ortherwise not able to enter")
+}
+hi()
+
+// restParameterized
+// In restParameterized, it should be in last formal argument otherwise, it will throw an error
+function bye(b,...a) { 
+    console.log(b)
+    console.log(a)
+}
+bye(1,2,3,4,5,6,7)
+
+//arrow function is used to reduce the code from multiple lines to single line.
+var x = () => {for(let i = 1;i<=5;i++) console.log(i)} 
+x()
+
+// one function returning another function
+function display() {
+    return function() {
+        return "Hello"
+    }
+}
+var a = display()
+console.log(a())
+
+//anonymous function
+var x = function (subject) {
+    return subject
+}
+console.log(x("Mobile"))
+
+</script>

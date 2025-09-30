@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{background: url(./html-color-codes-color-tutorials-hero.jpg);
+background-repeat: no-repeat; 
+background-size: cover;
+}
+.login-heading{ 
+    padding: 10px;
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login div{
+    border-radius: 20px;
+    background-color: transparent;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid white;
+
+}
+
+.login div .email{color: white; font-family: Arial, Helvetica, sans-serif; font-size: large; background: none; margin: 10px; border: 2px solid ;border-radius: 10px; height: 40px; width: 250px;}
+.login div label{color: white; font-size: large; font-family: Arial, Helvetica, sans-serif;}
+.email::placeholder{color: white; font-size: smaller;}
+.login div .password{color: white; font-family: Arial, Helvetica, sans-serif; font-size: large; background: none; margin: 10px; border: 2px solid; border-radius: 10px; height: 40px; width: 250px;}
+.password::placeholder{color: white;  font-size: smaller;}
+.login div .button{color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;  background: white; margin: 10px; border: 2px solid; border-radius: 10px; height: 40px; width: 250px;}
+.login div .button a{text-decoration: none; color: black; font-weight: bold;}
+.login div p{color: white; font-family: Arial, Helvetica, sans-serif; margin: 5px;}
+.login div p a{color: white; font-family: Arial, Helvetica, sans-serif; text-decoration: none;font-weight: bold;}
