@@ -1,0 +1,348 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.card-list {
+  display: flex;
+  padding: 20px;
+
+}
+
+.card-list .card-items {
+  
+  width: max-content;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+.card-list .card-items h3 {
+  background-color: rgb(92, 129, 208);
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+.card-list .card-items:hover {
+  box-shadow: 2px 2px 10px rgb(238, 99, 99);
+  /* background-color: #f4f4f4; */
+  border-radius: 10px;
+}
+
+.card-lists {
+  display: flex;
+  padding: 20px;
+}
+
+.card-lists .card-items {
+  margin: 10px;
+  padding: 10px;
+}
+
+.card-lists .card-items img{
+  width: 435px;
+  height: 300px;
+  object-fit: cover;
+  /* border-radius: 10px; */
+  padding: 5px;
+}
+
+.card-lists .card-items h3 {
+  color: white;
+  background-color: rgb(218, 24, 176);
+  text-align: center;
+  font-size: medium;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-lists .card-items input {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  font-size: medium;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.card-lists .card-items input:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+
+.card-lists .card-items:hover {
+  box-shadow: 2px 2px 10px rgb(238, 99, 99);
+  border-radius: 10px;
+  /* background-color: #f4f4f4; */
+  
+}
+
+.card-list-items {
+  text-align: center;
+  padding: 15px;
+  width: max-content;
+  margin: 20px;
+}
+
+.card-list-items h2 {
+  text-align: center;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.card-list-items p {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.card-list-items .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+
+.card-list-items .buttons .buttons-list input {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: 700;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card-list-items .buttons .buttons-list input:hover {
+  background-color: aquamarine;
+}
+
+.card-list-items:hover {
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgb(238, 99, 99);
+}
+
+.increment-decrement {
+  text-align: center;
+  width: max-content;
+  padding: 10px;
+  margin: 20px ;
+
+}
+
+.increment-decrement:hover {
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgb(238, 99, 99);
+}
+
+.increment-decrement span {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  align-content: space-around;
+  border: 4px solid orchid;
+  border-radius: 15px;
+  margin: 20px;
+  gap: 20px;
+}
+
+
+.increment-decrement span p {
+  font-size: large;
+  font-weight: bold;
+  
+}
+
+.increment-decrement span button {
+  color: rgb(38, 51, 189);
+  /* font-weight: bold; */
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.increment-decrement span button:hover {
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+
+.search-bar {
+  width: max-content;
+  margin: 10px;
+}
+
+.search-bar input {
+  border: none;
+  padding: 10px;
+}
+
+.checkbox {
+  margin: 10px;
+  font-size: larger;
+}
+
+.center-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: max-content;
+  gap: 100px;
+  padding: 15px;
+}
+
+
+
+.add-counters {
+  text-align: center;
+  width: max-content;
+  margin: 20px;
+  padding: 15px;
+}
+
+.add-counters .add-counter-button {
+  border: none;
+  background-color: blue;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+  width: 160px;
+}
+
+
+.add-counters ul li {
+  /* list-style-type: none; */
+  padding: 5px;
+  
+}
+
+.add-counters ul li .increment-button {
+  border: none;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: large;
+  width: 130px;
+
+  
+}
+
+.add-counters .add-counter-button:hover {
+  background-color: darkblue;
+}
+
+.add-counters ul li .increment-button:hover {
+  background-color: darkblue;
+}
+
+.add-counters:hover {
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px rgb(238, 99, 99);
+}
+
+.form-container {
+  width: max-content;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(194, 163, 125);
+  margin: 25px;
+}
+
+.form-container h1 {
+  text-align: center;
+}
+
+.form-field .form-text, .form-field .form-checkbox, .form-field .form-radio, .form-field .form-select {
+  font-size: large;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.form-field .form-text input {
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+.form-checkbox input, .form-checkbox label, .form-radio input  {
+  padding: 5px;
+  transform: scale(1.5);
+}
+
+.form-select select {
+  padding: 5px;
+  font-size: large;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+.form-data h3 {
+  text-align: center;
+}
+
+.form-data {
+  margin-top: 25px;
+  box-shadow: 4px 4px 15px rgb(80, 54, 54);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+
+
