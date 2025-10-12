@@ -169,7 +169,6 @@ body {
 }
 
 .increment-decrement {
-  text-align: center;
   width: max-content;
   padding: 10px;
   margin: 20px ;
@@ -178,7 +177,7 @@ body {
 
 .increment-decrement:hover {
   border-radius: 10px;
-  box-shadow: 5px 5px 15px rgb(238, 99, 99);
+  box-shadow: 4px 4px 15px rgb(238, 99, 99);
 }
 
 .increment-decrement span {

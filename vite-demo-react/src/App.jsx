@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header.jsx'
 import About from './components/About.jsx'
@@ -33,11 +31,27 @@ function App() {
   const details = {
     fullName: "Shaik Abdul",
     profession: "Java Developer",
-    contact: "abdulabbu@gmail.com"
+    contact: "abdulabbu@gmail.com",
+    linkedin: "https://www.linkedin.com/in/shaikabdul07/",
+    github: "https://github.com/Abdul-Shaik07"
   }
   //destructing with props 
-  const {fullName, profession, contact} = details;
+  const {fullName, profession, contact, linkedin, github} = details;
 
+  const navItems = [
+      {
+        label: "About",
+        href: "#about"
+      },
+      {
+        label: "Projects",
+        href: "#projects"
+      },
+      {
+        label: "Contact",
+        href: "#contact"
+      }
+    ]
 
   const projects = [
     {
@@ -55,8 +69,8 @@ function App() {
   return (
     <>
       <div className="portfolio">
-        <Header fullName={fullName} profession={profession}/>
-        <About fullName={fullName} profession={profession}/>
+        <Header details={details} navItems={navItems}/>
+        <About details={details}/>
         <Projects projects={projects}/>
         <Contact contact = {contact}/>
         <Footer/>

@@ -18,8 +18,8 @@ function Form({form}) {
                 <div className="form-field">
                     {/* form - text */}
                     <div className="form-text">
-                        <label htmlFor="">Text: </label>
-                        <input type="text" name="text" id="" value={formData.text} onChange={handleClick}/>
+                        <label htmlFor="text">Text: </label>
+                        <input type="text" name="text" id="text" value={formData.text} onChange={handleClick}/>
                     </div>
                     {/* form - text */}
                     <div className="form-checkbox">
