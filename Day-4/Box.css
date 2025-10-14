@@ -1,0 +1,28 @@
+.outer-box{
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    /* border-radius: 50%; */
+    background: linear-gradient(45deg, yellow, blue);
+}
+
+.outer-box .inner-box {
+    border: 2px solid none;
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    padding: 20px;
+    border-radius: 50%;
+    background: repeating-radial-gradient(circle, violet, indigo, blue, green, yellow, orange, red);
+
+    /* background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); */
+}
+
+.inner-box {
+    text-align: center;
+}
