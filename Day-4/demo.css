@@ -8,8 +8,13 @@ html,body {
     background-color: #111;
     width: 100%;
     height: 100%;
+}
 
-
+.positions-box {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
 }
 
 .box-1 {
@@ -17,9 +22,8 @@ html,body {
     height: 200px;
     background-image: url(https://media.licdn.com/dms/image/v2/D5603AQHmdGsgT0uIig/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723767896300?e=1762992000&v=beta&t=RNWTei_zy4rvUDduEoT2MwCiQeUrgM1gwb2cT_dLVhc);
     position: absolute;
-    left: 30%;
-    top: 10%;
-    border-radius: 30px;
+    left: 45%;
+    border-radius: 50%;
 }
 
 .box-2 {
@@ -27,8 +31,8 @@ html,body {
     height: 200px;
     background-image: url(https://media.licdn.com/dms/image/v2/D5603AQF3shnnULkzTA/profile-displayphoto-scale_200_200/B56ZlOVk4yJ8Ac-/0/1757955904372?e=1762992000&v=beta&t=WkfYCPVHByB-qYNkICgbQV1gyWL1vyc6xf1p8EQkTlE);
     position: absolute;
-    left: 40%;
-    top: 30%;
+    left: 45%;
+    top: 25%;
     border-radius: 50%;
 }
 
@@ -37,9 +41,9 @@ html,body {
     height: 200px;
     background-image: url(https://media.licdn.com/dms/image/v2/D5603AQEdJJpKtJj4eQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1674920127197?e=1762992000&v=beta&t=JZAg1BIjlm7zS2bxsG2V7ZL27uE0veqaEZWzDerYiAE);
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: 50%;
-    border-radius: 40px;
+    border-radius: 50%;
 }
 
 
