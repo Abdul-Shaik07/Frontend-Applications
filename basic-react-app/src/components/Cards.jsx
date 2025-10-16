@@ -42,13 +42,8 @@ function Cards({cards}) {
                         </div>
                     ))
                 }
-
-
-
             </div>
-
         </section>
-
     </div>
   )
 }
