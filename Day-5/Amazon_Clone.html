@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="./Amazon_Clone.css">
+</head>
+<body>
+
+    <div class="amazon-page">
+        <nav class="nav-bar">
+            <div class="amazon-logo">
+                <img src="https://cdn.worldvectorlogo.com/logos/amazon-dark.svg" alt="">
+            </div>
+            <div class="location-section">
+                <p>Delivering to Hyderabad 500009</p>
+                <div class="location-logo">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                    </span>
+                    <p><strong>Update Location</strong></p>
+                </div>
+            </div>
+            <div class="search-section">
+               
+               <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                    <input type="search" placeholder="Search Amazon.in">
+               </span>
+            </div>
+            <div class="country-section">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <span>EN</span>
+            </div>
+            <div class="sig-in">
+                <p class="hello">Hello, sign in</p>
+                <p class="account">Account, Lists</p>
+            </div>
+            <div class="exchange">
+                <p class="returns">Returns</p>
+                <p class="orders">& Orders</p>
+            </div>
+            <div class="cart">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                    <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                    </svg>
+                    <p>Cart</p>
+                </span>
+            </div>
+        </nav>
+        <div class="cards-container">
+            <h5>Total deals with exchange | Up to 74,000 off</h5>
+            <div class="card-items">
+                <div class="card">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/61eYPkT2zZL._SX679_.jpg" alt="not-found">
+                    </div>
+                    <div class="offer-items">
+                        <button>20% off</button>
+                        <p>Great Indian Festival</p>                    
+                    </div>
+                    <div class="price-item">
+                        <p><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg></span>77,999.00</p>
+                            <span><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg><span></span>82,375.00</li></span>
+                    </div>
+                    <div class="item-name">
+                        <p>Apple iPhone 17 (256GB) - Pink</p>
+                    </div>
+                    <div class="buy-section">
+                        <button>buy now</button>
+                        <button>add to cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/71JGCn1z1TL._SX679_.jpg" alt="not-found">
+                    </div>
+                    <div class="offer-items">
+                        <button>20% off</button>
+                        <p>Great Indian Festival</p>                    
+                    </div>
+                    <div class="price-item">
+                        <p><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg></span>1,29,900.00</p>
+                            <span><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg><span></span>1,34,900.00</li></span>
+                    </div>
+                    <div class="item-name">
+                        <p>Apple iPhone 17 Pro (256GB) - Orange</p>
+                    </div>
+                    <div class="buy-section">
+                        <button>buy now</button>
+                        <button>add to cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/71MXmswILHL._SX679_.jpg" alt="not-found">
+                    </div>
+                    <div class="offer-items">
+                        <button>20% off</button>
+                        <p>Great Indian Festival</p>                    
+                    </div>
+                    <div class="price-item">
+                        <p><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg></span>1,45,999.00</p>
+                            <span><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg><span></span>1,49,900.00</li></span>
+                    </div>
+                    <div class="item-name">
+                        <p>Apple iPhone 17 Pro Max (256GB) - Orange</p>
+                    </div>
+                    <div class="buy-section">
+                        <button>buy now</button>
+                        <button>add to cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/I/61Ce-6B6x+L._SX679_.jpg" alt="not-found">
+                    </div>
+                    <div class="offer-items">
+                        <button>20% off</button>
+                        <p>Great Indian Festival</p>                    
+                    </div>
+                    <div class="price-item">
+                        <p><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg></span>1,14,999.00</p>
+                            <span><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg><span></span>1,19,900.00</li></span>
+                    </div>
+                    <div class="item-name">
+                        <p>Apple iPhone 17 Air (256GB) - Sky Blue</p>
+                    </div>
+                    <div class="buy-section">
+                        <button>buy now</button>
+                        <button>add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobiles-container">
+            <div class="mobiles-card">
+                <div class="mobile-image">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Mounika/Oct4/200x200_12._CB798138649_.jpg" alt="not-found">
+                </div>
+            </div>
+
+            <div class="mobiles-card">
+                <div class="mobile-image">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Mounika/Oct4/01._CB798138649_.jpg" alt="not-found">
+                </div>
+            </div>
+
+            <div class="mobiles-card">
+                <div class="mobile-image">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Mounika/Oct4/200x200_02._CB798138649_.jpg" alt="not-found">
+                </div>
+            </div>
+
+            <div class="mobiles-card">
+                <div class="mobile-image">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Mounika/Oct4/200x200_04._CB798138649_.jpg" alt="not-found">
+                </div>
+            </div>
+
+            <div class="mobiles-card">
+                <div class="mobile-image">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Mounika/Oct4/200x200_09._CB798138649_.jpg" alt="not-found">
+                </div>
+            </div>
+
+            <div class="mobiles-card">
+                <div class="mobile-image">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Mounika/Oct4/200x200_11._CB798138649_.jpg" alt="not-found">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
