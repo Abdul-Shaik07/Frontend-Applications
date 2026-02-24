@@ -1,0 +1,315 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://media.istockphoto.com/id/530427836/photo/wooden-table-top-on-blue-sea-and-white-sand-beach.jpg?s=2048x2048&w=is&k=20&c=3ZAJ-qN4OWbpEJ926GGbVYrrGKFvNGHqgOetnAwgTk4=");   
+    background-color:#afc2bce7;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+    color: rgba(25, 22, 22, 0.823);
+}
+
+.logo h3 {
+    font-size: x-large;
+}
+
+.search-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(7, 5, 5, 0.263);
+    border-radius: 5px;
+    padding: 5px;
+    width: 380px;
+    margin: 20px auto;
+}
+
+.search-section .search {
+    /* background-color: #1b141cf4; */
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+.search-section .search .search-icon {
+    background: none;
+    color: rgba(0, 0, 0, 0.823);
+}
+
+.search-section  .search .search-input {
+    background: none;
+    margin-left: 10px;
+    border: none;
+    color: black;
+}
+
+.search-section .search .search-input:focus {
+    outline: none;
+}
+
+.search-section .button-section button {
+
+    border: none;
+    background-color: transparent;
+    margin-top: 3px;
+    padding: 1px 14px;
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 0.3s ease-in;
+}
+
+.search-section .button-section .button:hover {
+    background-color: rgba(207, 152, 152, 0.697);
+}
+
+.flow-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 10px auto;
+    
+}
+
+.flow-right marquee{
+    margin-top: 18px;
+    color: rgba(11, 9, 9, 0.934);
+    
+}
+
+.list-items ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    margin: 20px auto;
+    gap: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(7, 5, 5, 0.263);
+    padding: 10px;
+    border-radius: 5px;
+    /* margin: 20px auto;
+    gap: 20px;
+    width: 400px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(7, 5, 5, 0.263); */
+}
+
+.list-items ul li {
+    list-style-type: none;
+    /* padding: 30px;   */
+}
+
+.list-items ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.823);
+    /* background-color: #1b141cf4;  */
+    width: max-content;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.list-items ul li a:hover {
+    /* background-color: #45998760; */
+    background-color: rgba(207, 152, 152, 0.697);
+    backdrop-filter: blur(8px);  /* glass blur effect */
+   -webkit-backdrop-filter: blur(8px);  /* Safari support */
+    transition: all ease-in 0.3s;
+}
+
+hr {
+    margin: 50px 20px 20px;
+   
+}
+
+.login, .add-books, .find-book, .delete-book, .logout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 400px;
+  margin: 50px auto;
+  /* background-color: rgba(0,0,0,0.25); */
+  border-radius: 5px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 4px 10px rgba(7, 5, 5, 0.263);
+}
+
+
+.login h3, 
+.add-books h3, 
+.find-book h3, 
+.delete-book h3, .logout h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.823);
+}
+
+.login .login-form, 
+.add-books .add-books-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login .login-form input, 
+.add-books .add-books-form input, 
+.find-book .find-book-form input, 
+.delete-book .delete-book-form input {
+    padding: 8px;
+    width: 300px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid #0b090b87;
+    color: rgba(255, 255, 255, 0.823);
+}
+
+.login .login-form input:focus, 
+.add-books .add-books-form input:focus, 
+.find-book .find-book-form input:focus, 
+.delete-book .delete-book-form input:focus {
+    outline: none;
+}
+
+.login .login-form .button, 
+.add-books-form .button {
+    width: 300px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid #0b090b87;
+    color: rgba(0, 0, 0, 0.823);
+    padding: 8px;
+}
+
+.find-book .find-book-form .button, 
+.delete-book .delete-book-form .button {
+    background: none;
+    border: 1px solid #0b090b87;
+    padding: 8px;
+    border-radius: 10px;
+    color:  rgba(0, 0, 0, 0.823);
+    margin-left: 5px;
+}
+
+.register {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.register a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.register a:hover{
+    text-decoration: underline;
+}
+
+.logout p {
+   color: rgba(0, 0, 0, 0.823);
+}
+
+.logout .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logout .buttons button {
+    background: none;
+    width: 100px;
+    border: 1px solid #0b090b87;
+    color: rgba(0, 0, 0, 0.823);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.logout .buttons button:hover {
+    background-color:  rgba(207, 152, 152, 0.697);
+    transition: all ease-in 0.3s;
+}
+
+.login .login-form .button:hover, 
+.add-books-form .button:hover,
+.find-book .find-book-form .button:hover, 
+.delete-book .delete-book-form .button:hover {
+    background-color:  rgba(207, 152, 152, 0.697);
+    transition: all ease-in 0.3s;
+}
+
+
+
+/* .login:hover, 
+.add-books:hover, 
+.find-book:hover, 
+.delete-book:hover {
+    /* box-shadow: 4px 4px 15px rgba(234, 229, 229, 0.4); */
+} */
+
+
+
+
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .search {height: 30px; background: none; color: white; border: none; margin-right: 10px ; border-bottom: 2px solid; font-size: large; text-align: center;}
+.nav-links .button {height: 30px; width: 70px; margin-right: 30px; background: none; border: none;  border-bottom: 2px solid; text-align: center; font-size: large; font-family: Arial, Helvetica, sans-serif;}
+.nav-links .button a{text-decoration: none; color: white;}
+.flow-right{ transition-duration: 6s; color: white; font-family: Arial, Helvetica, sans-serif;}
+
+.list-items{margin-top: 20px;}
+
+.list-items ul li {margin: 30px; list-style-type: none; text-decoration: none; color: white; font-size: large; font-family: Arial, sans-serif; width: 170px; height: 40px;  padding: 10px; font-weight: bold;}
+
+.list-items ul li a {text-decoration: none; color: white;}
+
+.list-items ul li:hover {border: 2px solid; color: rgb(152, 152, 116);}
+
+.login{margin-left: 350px; }
+
+.nav-links .search::placeholder{color: white;} */

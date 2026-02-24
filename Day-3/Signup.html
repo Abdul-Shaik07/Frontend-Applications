@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+
+        .sign-up h1 {
+            text-align: center;
+            font-size: 36px;
+            color: blueviolet
+        }
+
+        .sign-up .form-container {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        
+        }
+
+        .sign-up .form-container .header {
+            text-align: center;
+        }
+
+        .form-page {
+            width: 400px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 15px #ccc;
+            padding: 20px;
+        }
+
+        .form-page h3, .form-page span {
+            text-align: center;
+        }
+
+        .form-page .input-name input, 
+        .form-page .input-dob input,  
+        .form-page .input-email input, 
+        .form-page .input-password input {
+            height: 40px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            margin-top: 8px;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+        
+        }
+
+        .input-gender {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+            
+        }
+
+        .gender-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #ccc ;
+            border-radius: 5px;
+            padding: 5px;
+            height: 20px;
+            width: 100%;
+        } 
+    
+        .context-1, .context-1 span a, .context-2 p span a {
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        .context-1 span a:hover, .context-2 p span a:hover {
+            text-decoration: underline;
+        }
+
+        .button button{
+            border: none;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            background-color: blueviolet;
+        }
+
+        .login-link, .login-link a {
+            text-decoration: none;
+            margin-top: 10px;
+            text-align: center;
+            
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+
+ 
+
+    </style>
+</head>
+<body>
+    
+    <div class="sign-up">
+        <h1>facebook</h1>
+        <div class="form-container">
+            <!-- <div class="header">
+                <h3>Creat a new account</h3>
+                <span>it's a quick easy</span>
+            </div> -->
+            <hr>
+            <div class="form-page">
+                <h3>Creat a new account</h3>
+                <span>it's a quick easy</span>
+                <form action="">
+                    <div class="input-name">
+                        <input type="text" name="firstName" id="" placeholder="First Name">
+                        <input type="text" name="lastName" id="" placeholder="Last Name">
+                    </div>
+                    <div class="input-dob">
+                        <input type="date" name="date" id="">
+                    </div>
+                    <div class="input-gender">
+                        <div class="gender-option">
+                            <label>Female</label>
+                            <input type="radio" name="gender" id="">
+                        </div>
+                        <div class="gender-option">
+                            <label>Male</label>
+                            <input type="radio" name="gender" id="">
+                        </div>
+                        <div class="gender-option">
+                            <label>others</label>
+                            <input type="radio" name="gender" id="">
+                        </div>
+                    </div>
+                    <div class="input-email">
+                        <input type="email" name="email" placeholder="email">
+                    </div>
+                    <div class="input-password">
+                        <input type="password" name="password" placeholder="password">
+                    </div>
+                    <div class="context-1">
+                        <span>People who use our service may have uploaded your contact information to Facebook.</span>
+                        <span><a href="#">Learn more.</a></span>
+                    </div>
+                    <div class="context-2">
+                        <p>By clicking Sign Up, you agree to our <span><a href="#">Terms</a></span>, <span><a href="#">Privacy Policy</a></span> and <span><a href="#">Cookies Policy</a></span>. You may receive SMS notifications from us and can opt out at any time.</p>
+                    </div>
+
+                    <div class="button">
+                        <button>Sign Up</button>
+                    </div>
+                </form>
+                <div class="login-link">
+                    <a href="http://127.0.0.1:5500/Day-3/Login.html" target="_blank">Already have an account</a>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

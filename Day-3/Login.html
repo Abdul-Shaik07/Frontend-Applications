@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .log-in {
+            margin-top: 40px;
+        }
+        
+        .log-in h1{
+            color: blueviolet;
+            text-align: center;
+            margin-bottom: 80px;
+            font-size: 50px;
+        }
+
+        .form-container  {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+        
+        }
+
+        .form-page {
+            margin-top: 8rem;
+            box-shadow: 4px 4px 15px thistle;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            width: 420px;
+        }
+
+        .form-page h4 {
+            font-size: larger;
+            font-weight: 600;
+        }
+
+        .form-page form input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px ;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+
+        .form-page form button {
+            width: 100%;
+            background-color: blueviolet;
+            color: white;
+            font-size: larger;
+            font-weight: 600;
+            padding: 10px;
+            margin: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container .form-page div {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            
+        }
+
+        .form-container .form-page div a{
+            text-decoration: none;
+            color: rgb(68, 68, 161);
+            
+        }
+
+        .form-container .form-page div a:hover {
+            text-decoration: underline;
+            
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="log-in" id="login">
+        <h1>facebook</h1>
+            <div class="form-container">
+                <div class="form-page">
+                    <h4>Log in to Facebook</h4>
+                    <form action="" method="get"> 
+                        <input type="text" name="username" id="username" placeholder="username"> <br>
+                        <input type="text" name="password" id="password" placeholder="password"> <br>
+                        <button>Log in</button>
+                    </form>
+                    <div>
+                        <a href="#">forgotten account?</a>
+                        <a href="http://127.0.0.1:5500/Day-3/Signup.html" target="_blank">Sign Up for Facebook</a>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</body>
+</html>
