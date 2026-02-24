@@ -1,0 +1,192 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+
+.navbar .logo-container h1 {
+    font-size: 30px;
+    color: #333333;
+    margin: 0;
+    cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+ul li a:hover {
+    color: #ed0606;
+}
+
+ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ed0606;
+    transition: width .3s;
+}
+ul li a:hover::after {
+    width: 100%;
+}
+
+
+.login-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.login-cart .login-button {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #333333;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-cart .login-icon {
+    font-size: 40px;
+    color: #333333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.login-cart .cart-button {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #333333;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.login-cart .cart-icon {
+  font-size: 40px;
+  color: #333333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: none;
+}
+
+.login-cart .login-button:hover .login-icon,
+.login-cart .cart-button:hover .cart-icon {
+    color: blueviolet;
+    transform: scale(1.05);
+}
+
+.login-button .login,
+.cart-button .cart {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.login-cart .login-button:hover .login,
+.login-cart .cart-button:hover .cart {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    transform: scale(1.05);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    justify-content: space-between;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .navbar .logo-container h1 {
+    font-size: 18px;
+  }
+
+  .navbar .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 8px 0;
+    display: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 30;
+  }
+
+  .navbar .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar .navbar-links li {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 40;
+    order: 1;
+    margin-left: 8px;
+  }
+
+  .menu-toggle .material-symbols-outlined { font-size: 28px; }
+
+  /* center the logo */
+  .navbar .logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    order: 2;
+    z-index: 50;
+  }
+
+  /* keep login-cart visible on right */
+  .login-cart { order: 3; margin-right: 8px; gap: 1rem;}
+
+  .login-cart .login-icon, .login-cart .cart-icon { font-size: 32px; }
+  .login-button .login, .cart-button .cart { font-size: 14px; }
+}
+
+

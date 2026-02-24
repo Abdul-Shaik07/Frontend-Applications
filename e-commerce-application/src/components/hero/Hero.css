@@ -1,0 +1,111 @@
+/* 🔥 HERO SECTION */
+.hero-section {
+  margin-top: 5rem;
+  width: 100%;
+  position: relative;
+}
+
+/* Swiper full width */
+.hero-swiper {
+  width: 100%;
+  height: 90vh; /* Desktop height */
+}
+
+/* Slide container */
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 🔥 Full Width Image */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill without distortion */
+}
+
+/* 🔥 Overlay Container */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 2;
+  max-width: 500px;
+}
+
+/* Optional Dark Gradient for Better Text Visibility */
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+}
+
+/* Text Styles */
+.overlay h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.overlay p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  padding: 12px 28px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.overlay button:hover {
+  background: #e60000;
+}
+
+/* 🔥 Tablet */
+@media (max-width: 1024px) {
+  .hero-section {
+    margin-top: 0;
+  }
+  .hero-swiper {
+    height: 75vh;
+  }
+  
+
+  .overlay h1 {
+    font-size: 36px;
+  }
+}
+
+/* 🔥 Mobile */
+@media (max-width: 768px) {
+
+  .hero-section {
+    margin-top: 0;
+  }
+  .hero-swiper {
+    height: 60vh;
+  }
+
+  .overlay {
+    left: 5%;
+    right: 5%;
+    text-align: center;
+  }
+
+  .overlay h1 {
+    font-size: 28px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+}
